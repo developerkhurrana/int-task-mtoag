@@ -171,7 +171,9 @@ export default function StickyProcess() {
           {steps.map((step, i) => (
             <div
               key={i}
-              ref={(el) => (panelRefs.current[i] = el)}
+              ref={(el) => {
+                panelRefs.current[i] = el;
+              }}
               className="sticky top-0 flex w-full flex-col items-center justify-center px-4"
               style={{
                 height: 500,
