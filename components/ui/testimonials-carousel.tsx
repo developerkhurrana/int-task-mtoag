@@ -122,7 +122,9 @@ export function TestimonialsCarousel() {
         return prev + 2;
       });
     }, duration / 50);
-    return () => intervalRef.current && clearInterval(intervalRef.current);
+    return () => {
+      clearInterval(intervalRef.current!);
+    };
   }, [current]);
 
   const handleNav = (idx: number) => {
