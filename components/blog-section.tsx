@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export default function BlogSection() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -120,10 +121,12 @@ export default function BlogSection() {
                 className="relative shrink-0 cursor-pointer transition-transform hover:-translate-y-1"
                 style={{ width: "350px" }}
               >
-                <img
+                <Image
                   src={blog.image}
                   className="mb-3 h-[200px] w-full rounded-lg object-cover"
                   alt={`An image for a blog post titled ${blog.title}`}
+                  width={350}
+                  height={200}
                 />
                 <span className="rounded-md border-[1px] border-neutral-500 px-1.5 py-1 text-xs uppercase text-neutral-500">
                   {blog.author}

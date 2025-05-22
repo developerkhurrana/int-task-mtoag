@@ -2,9 +2,13 @@
 const nextConfig = {
   images: {
     domains: [
-      "images.unsplash.com",
-      "cdn.jsdelivr.net", // For the company logos
+      "buildfire.com",
+      "www.digitalsilk.com",
+      "kinsta.com",
+      "encrypted-tbn0.gstatic.com",
       "www.mtoag.com",
+      "cdn.jsdelivr.net",
+      "images.unsplash.com",
     ],
   },
 };

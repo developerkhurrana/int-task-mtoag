@@ -6,6 +6,7 @@ import {
   IconShoppingCart,
   IconChartBar,
 } from "@tabler/icons-react";
+import Image from "next/image";
 
 export default function BentoGridSecondDemo() {
   return (
@@ -35,10 +36,12 @@ const items = [
       "We help our clients present extraordinary apps to the world by providing your business a full-fledged identity and extending your brand.",
     header: (
       <div className="w-full max-h-48 md:max-h-60 overflow-hidden">
-        <img
+        <Image
           src="https://buildfire.com/wp-content/uploads/2024/09/become-mobile-app-developer-1.jpg"
           className="w-full h-full object-cover rounded-xl"
           alt="Mobile App"
+          width={500}
+          height={200}
         />
       </div>
     ),
@@ -51,10 +54,12 @@ const items = [
       "We produce responsive websites that help clients present amazing and informative content without any hassle.",
     header: (
       <div className="w-full max-h-48 md:max-h-60 overflow-hidden">
-        <img
+        <Image
           src="https://www.digitalsilk.com/wp-content/uploads/2020/06/website-development-process-hero-image.png"
           className="w-full h-full object-cover rounded-xl"
           alt="Website Development"
+          width={500}
+          height={200}
         />
       </div>
     ),
@@ -67,10 +72,12 @@ const items = [
       "We provide you the most specialized solutions, regardless of the scope and design of your online business.",
     header: (
       <div className="w-full max-h-48 md:max-h-60 overflow-hidden">
-        <img
+        <Image
           src="https://kinsta.com/wp-content/uploads/2022/06/open-source-ecommerce.jpg"
           className="w-full h-full object-cover rounded-xl"
           alt="E-Commerce"
+          width={500}
+          height={200}
         />
       </div>
     ),
@@ -83,10 +90,12 @@ const items = [
       "We help you to increase your leads and sales by providing you with site analysis, on-page SEO, and other strategies.",
     header: (
       <div className="w-full max-h-48 md:max-h-60 overflow-hidden">
-        <img
+        <Image
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxPnBRSbrQWb6m0bwzTeoedSNacH9gQ1Z4Vg&s"
           className="w-full h-full object-cover rounded-xl"
           alt="SEO"
+          width={500}
+          height={200}
         />
       </div>
     ),

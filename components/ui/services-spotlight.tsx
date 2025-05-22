@@ -1,6 +1,6 @@
 "use client";
-import { CardSpotlight } from "@/components/ui/card-spotlight";
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const services = [
   {
@@ -54,12 +54,12 @@ export default function ServicesSpotlight() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
       {services.map((service) => (
-        <CardSpotlight
+        <div
           key={service.title}
           className={cn(
             "bg-white border border-neutral-200 shadow-lg h-full flex flex-col"
           )}
-          color="#f3f4f6"
+          style={{ backgroundColor: "#f3f4f6" }}
         >
           <div className="flex-1 flex flex-col">
             <p className="text-2xl font-bold text-gray-900 mb-2">
@@ -70,14 +70,21 @@ export default function ServicesSpotlight() {
             </p>
             <div className="flex items-center gap-3 mt-auto">
               {service.icons.map((icon, i) => (
-                <img key={i} src={icon} alt="" className="h-7 w-7" />
+                <Image
+                  key={i}
+                  src={icon}
+                  alt=""
+                  className="h-7 w-7"
+                  width={28}
+                  height={28}
+                />
               ))}
             </div>
           </div>
           <button className="mt-8 px-6 py-2 rounded-full bg-orange-500 text-white font-semibold shadow hover:bg-orange-600 transition w-fit">
             Explore
           </button>
-        </CardSpotlight>
+        </div>
       ))}
     </div>
   );

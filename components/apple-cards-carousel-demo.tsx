@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { Carousel, Card } from "@/components/ui/apple-cards-carousel";
+import Image from "next/image";
 
 export default function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
@@ -34,11 +35,11 @@ const data = [
             projects.
           </span>
         </p>
-        <img
+        <Image
           src="https://www.mtoag.com/wp-content/themes/mtoag/assets/images/plantech-mobile-cash-study.png"
           alt="PlanTech"
-          height="500"
-          width="500"
+          height={500}
+          width={500}
           className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
         />
       </div>
@@ -56,11 +57,11 @@ const data = [
             interesting.
           </span>
         </p>
-        <img
+        <Image
           src="https://www.mtoag.com/wp-content/themes/mtoag/assets/images/betfaircaseimg.jpg"
           alt="Betfair Bot"
-          height="500"
-          width="500"
+          height={500}
+          width={500}
           className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
         />
       </div>
@@ -78,11 +79,11 @@ const data = [
             provide construction material at one go.
           </span>
         </p>
-        <img
+        <Image
           src="https://www.mtoag.com/wp-content/themes/mtoag/assets/images/getitcaseimg.jpg"
           alt="Construction Delivery"
-          height="500"
-          width="500"
+          height={500}
+          width={500}
           className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
         />
       </div>
@@ -99,11 +100,11 @@ const data = [
             The oldest insurance company of Lebanon reached out to us.
           </span>
         </p>
-        <img
+        <Image
           src="https://www.mtoag.com/wp-content/themes/mtoag/assets/images/money-mobile-cash-study_full.png"
           alt="Lebanon Insurance"
-          height="500"
-          width="500"
+          height={500}
+          width={500}
           className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
         />
       </div>
