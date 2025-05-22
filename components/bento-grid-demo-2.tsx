@@ -27,9 +27,7 @@ export default function BentoGridSecondDemo() {
     </div>
   );
 }
-const Skeleton = () => (
-  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-neutral-100 border border-transparent"></div>
-);
+
 const items = [
   {
     title: "Mobile App Development",
